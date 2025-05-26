@@ -1,0 +1,15 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import NotFound from "../components/NotFound";
+import Portofolio from "../pages/Portofolio";
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/:content" element={<Portofolio />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
