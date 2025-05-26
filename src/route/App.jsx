@@ -5,6 +5,7 @@ function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/" element={<Navigate replace to="/profile" />} />
         <Route path="/:content" element={<Portofolio />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
